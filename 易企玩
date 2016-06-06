@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>170</title>
+	<script type="text/javascript" src='js/javascript.js'></script>
+	<style type="text/css">
+		*{margin:0;padding:0;list-style:none;text-decoration:none;}
+		body, html {
+				    font: normal normal 14px/22px Arial,"Microsoft YaHei";
+				    font-style: normal;
+				    font-variant: normal;
+				    font-weight: normal;
+				    font-stretch: normal;
+				    font-size: 16px;
+				    line-height: 22px;
+				    font-family: Arial, 'Microsoft YaHei';}
+		body{width:1350px;height:894px;}
+		header{height:12.3%;background:#FFB142;}
+		.brand-logo{background:url(images/logo.png);margin-left:7%;position:absolute;
+			height:140px;width:230px;}
+		.brand-nav{height:109px;width:60%;margin-left:36%;/*background:gray;*/ }
+		.brand-nav-ul{margin-left:9%; }
+		.navli{line-height:106px;}
+		.triangle{width:0;height:0;;position:absolute;left:644px;top:75px;
+			border-top:20px solid rgba(255,255,255,0);
+			border-left:20px solid rgba(255,255,255,0);
+			border-bottom:20px solid white;
+			border-right:20px solid rgba(255,255,255,0);
+			transition: all 500ms;
+			
+			   /* width: 0;
+			    height: 0;
+			   	bottom:73%;
+    			left:48%;
+			    border: 15px solid transparent;
+			    border-bottom-color: #fff;
+			    position: absolute;
+			    display: block;
+			    -ms-transition: left linear .4s 0s;
+			    -o-transition: left linear .4s 0s;
+			    -moz-transition: left linear .4s 0s;
+			    -webkit-transition: left linear .4s 0s;
+			    transition: left linear .4s 0s;*/
+			}
+		.navli>a{float:left;margin-left:12%;}
+		.navli>a:link,.navli>a:visited{color:white;}
+		.navli>a:hover,.navli>a:active{color:#B8772C;}
+		.loggin{width:40px;height:25px;line-height:26px;float:right;background:#FFDD25;    margin-top:42px;border-radius:4px;}
+		.loggin>a{text-decoration:none;}
+		.loggin-color{color:black;margin-left:5px;}
+		main{height:60%;background:#F2F2F2;}
+		.container{width:1200px;height:532px;background:white;margin-left:7%;border:1px solid white;}
+		.con-main{height:63%;width:70%;border:3px solid #EFC78F;margin:8% 16%;
+			box-shadow:0 0 40px #db8100;}
+		.reg-logo{width:60%;height:100%;background:url(images/reg-logo.png);}
+		.reg{width:45%;height:100%;border-left:1px dashed gray;float:right;margin-top:-335px;}
+		.menu{width:100%;height:70px;}
+		.menu-ul{width:224px;height:60px;margin:10px auto; border-bottom:3px solid #CCCCCC}
+		.menu-ul li{line-height: 80px;}
+		.menu-li{width:112px;height:60px; margin:auto;float:left;}
+		.select{border-bottom:3px solid #F26639; }
+		.sli{margin-left:25px;position: relative;}
+		#place{margin-left:10px;/*line-height: 240px;*/}
+		.newClick{font-size:12px;width:79px;height:20px;position:absolute;
+			top:220px;left:935px;border-radius:4px;background-color:#f36639;
+			color:#fff;padding:0px 8px;}
+		#trigon{width:0;height:0;border-top:5px solid #f36639;
+				position:absolute;margin:20px 145px;
+				border-left:5px solid rgba(255,255,255,0);
+				border-bottom:5px solid rgba(255,255,255,0);
+				border-right:5px solid rgba(255,255,255,0);}
+		.content{width:100%;height:240px;margin-top:0px;}
+		.tab{border-bottom:2px solid #f36639;}
+		.form-login{height:265px;/*border:1px solid gray;*/}
+		.file{font-size:16px;padding:0 9px;margin:16px 8px;/*font-weight:900;*/}
+		/*label{width: 90px;text-align: left;display: inline-block;}*/
+		label{}
+		.inpMargin{margin-right:-32px;}
+		input{height:30px;
+			  /*height:/40px;*/
+			  border: 1px solid #ccc;
+			  background-color: #fff;
+			  width: 220px;
+			  line-height: 1;
+			  font-size: 14px;
+			  font-family: Arial,"Microsoft YaHei";
+			  padding: 0 10px;
+			  margin-left:45px;
+			 }
+			.check-label {
+					    width: auto;
+					    cursor: pointer;
+					    margin-left:79px;
+					    font-size: 14px;
+					}
+			.check-label input[type=checkbox] {
+							    width: 20px;
+							    padding: 0;
+							    margin: 0;
+							    line-height: 1;
+							    height: 20px;
+							    /*visibility: hidden;*/
+							    position: relative;
+							    top: 5px;
+							}
+			button {
+				    width: 220px;
+				    height: 40px;
+				    display: block;
+				    margin: 0 auto;
+				    background-color: #f36639;
+				    color: #fff;
+				    border: none;
+				  /*  -ms-border-radius: 4px;
+				    -o-border-radius: 4px;
+				    -moz-border-radius: 4px;
+				    -webkit-border-radius: 4px;*/
+				    border-radius: 4px;
+				    font-family: Arial,"Microsoft YaHei";
+				    font-size: 16px;
+				    cursor: pointer;
+				    letter-spacing: 1px;
+				}
+			.form-login a{text-decoration:none;}
+
+		footer{height:24%;background:white;}
+		.foot{height:210px;background:url(images/footer.png);}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="brand-logo"></div>
+		</nav>
+		<nav class="brand-nav">
+			<ul class="brand-nav-ul">
+				<li class="navli"><a href="#">首页</a></li>
+				<li class="navli"><a href="#">免费定制</a></li>
+				<li class="navli"><a href="#">案例</a></li>
+				<li class="navli"><a href="#">关于</a></li>
+				<li class="navli"><a href="#">帮助</a></li>
+				<div class="triangle"></div>
+			</ul>
+			<div class="loggin">
+				<a href="#"><span class="loggin-color">登录</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="con-main">
+				<div class="reg-logo"></div>
+				<div class="reg">
+					<div class="menu" id="menu">
+						<ul class="menu-ul">
+							<span class="newClick">新用户?点这里</span>
+							<nav id="trigon"></nav>
+							<li class="menu-li" class="select">
+								<a href="#"><span class="sli">登录<span></a>
+							</li>
+							<li class="menu-li" >
+								<a href="#">
+								<span class="sli" id="place">注册</span></a> 
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="content">
+					<ul >
+						<li class="file">
+							<label>邮箱</label>
+                            <input type="text" value="" name="email" placeholder="请输入您的账号" required="required" 
+                            pattern="/^[\w]+@[\w]+\.[a-z]+$/i">
+						</li>
+						<li class="file">
+							<label>密码</label>
+                            <input type="password" value="" name="password" placeholder="请输入您的密码" required='required'>
+						</li>
+						<li class="file">
+							<label class="check-label">
+                            <input type="checkbox" name="remember">七天内自动登录
+                            </label>
+						</li>
+						<li class="file">
+							 <button class="login-btn" type="button" id="btnLogin">
+                                登 录
+                            </button>
+						</li>
+						<a href="#" style="font-size:12px; margin-left:290px;">忘记密码?</a>
+					</ul>
+					<ul style="display:none">
+						 <li class="file">
+                            <label>邮箱</label>
+                            <input type="text" value="" name="email" placeholder="请输入您的账号" id="allEmail" list="email">
+							<datalist id="email">
+							 <!--  <option value="@qq.com">
+							  <option value="@163.com">
+							  <option value="@sina.com"> -->
+							</datalist>
+                        </li>
+                        <li class="file">
+                            <label>密码</label>
+                            <input type="password" value="" name="password" placeholder="请输入您的密码">
+                        </li>
+                        <li class="file">
+                            <label class="inpMargin">确认密码</label>
+                            <input type="password" value="" name="confirmPassword" placeholder="请确认您的密码">
+                        </li>
+                        <li class="file">
+                            <button class="reg-btn" type="button" id="btnRegister">
+                                同意服务条款并注册
+                            </button>
+                    	</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="foot"></div>
+	</footer>
+</body>
+</html>
